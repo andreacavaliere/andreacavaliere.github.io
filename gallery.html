@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> gallery </title>
+	<link rel="stylesheet" type="text/css" href="gallery.css">
+</head>
+<h1> A Lizard for How You're Feeling</h1>
+<body>
+	<script>
+function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+	<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search emotions..">
+
+<ul id="myUL">
+  <li><a href="#" class="header">Lizards</a></li>
+  <li><a href="LIZARDS/2.jpg"> <img src="LIZARDS/2.jpg" width="200"> <br> Sad</a></li>
+  <li><a href="LIZARDS/3.jpg"> <img src="LIZARDS/3.jpg" width="200">  <br> Angry</a></li>
+  <li><a href="LIZARDS/4.jpg"><img src="LIZARDS/4.jpg" width="200"> <br> Interested</a></li>
+  <li><a href="LIZARDS/5.jpg"><img src="LIZARDS/5.jpg" width="200"> <br> Grumpy</a></li>
+  <li><a href="LIZARDS/6.jpg"><img src="LIZARDS/6.jpg" width="200"> <br> Frightened</a></li>
+  <li><a href="LIZARDS/7.jpg"><img src="LIZARDS/7.jpg" width="200"> <br> Smug</a></li>
+  <li><a href="LIZARDS/8.jpg"><img src="LIZARDS/8.jpg" width="200"> <br> Dissapointed</a></li>
+  <li><a href="LIZARDS/9.jpg"><img src="LIZARDS/9.jpg" width="200"> <br> Uncomfortable</a></li>
+  <li><a href="LIZARDS/10.jpg"><img src="LIZARDS/10.jpg" width="200"> <br> Beautiful</a></li>
+  <li><a href="LIZARDS/11.jpg"><img src="LIZARDS/11.jpg" width="200"> <br> Happy</a></li>
+  <li><a href="LIZARDS/12.jpg"><img src="LIZARDS/12.jpg" width="200"> <br> Relaxed</a></li>
+  <li><a href="LIZARDS/13.jpg"><img src="LIZARDS/13.jpg" width="200"> <br> Shy</a></li>
+  <li><a href="LIZARDS/14.jpg"><img src="LIZARDS/14.jpg" width="200"> <br> Suspicious</a></li>
+  <li><a href="LIZARDS/15.jpg"><img src="LIZARDS/15.jpg" width="200"> <br> Tired</a></li>
+  <li><a href="LIZARDS/16.jpg"><img src="LIZARDS/16.jpg" width="200"> <br> Adventurous</a></li>
+  <li><a href="LIZARDS/17.jpg"><img src="LIZARDS/17.jpg" width="200"> <br> Cozy</a></li>
+  <li><a href="LIZARDS/18.jpg"><img src="LIZARDS/18.jpg" width="200"> <br> Deep</a></li>
+  <li><a href="LIZARDS/19.jpg"><img src="LIZARDS/19.jpg" width="200"> <br> Surprised</a></li>
+  <li><a href="LIZARDS/20.jpg"><img src="LIZARDS/20.jpg" width="200"> <br> Evil</a></li>
+  <li><a href="LIZARDS/21.jpg"><img src="LIZARDS/21.jpg" width="200"> <br> Content</a></li>
+  <li><a href="LIZARDS/22.jpg"><img src="LIZARDS/22.jpg" width="200"> <br> Clean</a></li>
+  <li><a href="LIZARDS/23.jpg"><img src="LIZARDS/23.jpg" width="200"> <br> Fat</a></li>
+  <li><a href="LIZARDS/24.jpg"><img src="LIZARDS/24.jpg" width="200"> <br> Lazy</a></li>
+  <li><a href="LIZARDS/25.jpg"><img src="LIZARDS/25.jpg" width="200"> <br> Graceful</a></li>
+  <li><a href="https://www.youtube.com/watch?v=MUS5JlHG7AA"><img src="LIZARDS/26.jpg" width="200"> <br> Conspiratorial</a></li>
+  
+  <li><a href="https://www.youtube.com/embed/4iCzOllSjLU"> <img src="LIZARDS/1.jpg" width="200">  <br> Tad Cooper: A state of nirvanna. </a></li>
+</ul>
+</body>
+
+</html>
